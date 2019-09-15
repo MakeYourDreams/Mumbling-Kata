@@ -1,8 +1,8 @@
-let accumString = "";
-let loopIndex = 0;
+
 
 function accum(s) {
-	accumString = "";
+let accumString = "";
+let loopIndex = 0;
   
       for (var i = 0; i < s.length; i++) {
         
