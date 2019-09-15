@@ -2,23 +2,21 @@
 
 function accum(s) {
 let accumString = "";
-let loopIndex = 0;
   
       for (var i = 0; i < s.length; i++) {
         
-          loopIndex = (i + 1);
           currentCharacter = s.charAt(i);
           
-          for (var ii = 0; ii < loopIndex; ii++){
+          for (var ii = 0; ii <= i; ii++){
               if (ii > 0){
               currentCharacter = currentCharacter.toLowerCase()
               }else{
               currentCharacter = currentCharacter.toUpperCase()
               }             
-          accumString += currentCharacter;
-          }
+            accumString += currentCharacter;
+            }
 		  
-          if (loopIndex != s.length){
+          if (i != s.length-1){
             accumString += "-" ;
             }
 			
